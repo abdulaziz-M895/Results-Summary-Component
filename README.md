@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution URL](https://your-solution-url.com)
-- Live Site URL: [Take a look](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/results-summary-component-using-flexbox-L-YeJZRUX3)
+- Live Site URL: [Take a look](https://abdulaziz-m895.github.io/Results-Summary-Component/)
 
 ### Built with
 
