@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+p {
+  font-size: 18px;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Mobile */
+@media (min-width: 375px) {
+  .container {
+    width: 350px;
+  }
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Desktop */
+@media (min-width: 1440px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 20px;
+}
+.content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  box-shadow: 10px 10px 10px hsl(221, 100%, 96%);
+  width: 60%;
+  border-radius: 30px;
+  height: 437px;
+}
+@media (max-width: 1030px) {
+  .content {
+    width: 80%;
+  }
+}
+@media (max-width: 991px) {
+  .content {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    justify-content: stretch;
+    width: 100%;
+    box-shadow: 0 0 15px 5px hsl(221, 100%, 96%);
+  }
+}
+/* Start Result */
+.content .result {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 25px 30px;
+  text-align: center;
+  width: 50%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .content .result{
+    width: 100%;
+  }
+}
+.content .result h2 {
+  color: hsl(241, 100%, 89%);
+}
+.content .result .circle {
+  margin-block: 20px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsla(241, 100%, 89%, 0.632);
+}
+.content .result .circle span {
+  font-size: 60px;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+}
+.content .result h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 27px;
+  margin-bottom: 14px;
+}
+.content .result p:last-child {
+  color: hsl(241, 100%, 89%);
+  margin: 0 20px 20px;
+}
+/* End Result */
+/* Start Summary */
+.content .summary {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px 30px;
+  width: 50%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .content .summary{
+    width: 100%;
+  }
+}
+.content .summary h2 {
+  margin-bottom: 20px;
+  color: hsl(224, 30%, 27%);
+}
+.content .summary .data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.content .summary .data img {
+  margin-right: 10px;
+}
+.content .summary .data .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.content .summary .data .text span {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+.content .summary .data .text span span {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+.content .summary .data.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.content .summary .data.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.content .summary .data.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.content .summary .data.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.content .summary button {
+  cursor: pointer;
+  padding: 15px 0;
+  margin: 20px 0 0;
+  border: none;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background: hsl(224, 30%, 27%);
+}
+.content .summary button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.content .summary button:active {
+  scale: 0.98;
+}
+/* End Summary */
